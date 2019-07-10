@@ -33,7 +33,7 @@ resource "linode_instance" "k8s_node" {
     destination = "/tmp"
 
     connection {
-      host        = self.ip_address
+      #       host        = self.ip_address
       agent       = "true"
 #      private_key = chomp(file(var.ssh_private_key))
 
@@ -55,7 +55,7 @@ resource "linode_instance" "k8s_node" {
     ]
 
     connection {
-      host        = self.ip_address
+      #       host        = self.ip_address
       agent       = "true"
 #      private_key = chomp(file(var.ssh_private_key))
 
@@ -74,7 +74,7 @@ resource "linode_instance" "k8s_node" {
     on_failure = continue
 
     connection {
-      host        = self.ip_address
+      #       host        = self.ip_address
       agent       = "true"
 #      private_key = chomp(file(var.ssh_private_key))
 
