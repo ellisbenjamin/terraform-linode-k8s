@@ -35,7 +35,7 @@ resource "linode_instance" "k8s_master" {
 
     connection {
       host        = self.ip_address
-      agent       = "false"
+      agent       = "true"
 #      private_key = chomp(file(var.ssh_private_key))
 
       type        = "ssh"
@@ -50,7 +50,7 @@ resource "linode_instance" "k8s_master" {
 
     connection {
       host        = self.ip_address
-      agent       = "false"
+      agent       = "true"
 #      private_key = chomp(file(var.ssh_private_key))
 
       type        = "ssh"
@@ -77,7 +77,7 @@ resource "linode_instance" "k8s_master" {
 
     connection {
       host        = self.ip_address
-      agent       = "false"
+      agent       = "true"
 #      private_key = chomp(file(var.ssh_private_key))
 
       type        = "ssh"
