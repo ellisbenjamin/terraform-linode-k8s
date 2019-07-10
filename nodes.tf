@@ -35,7 +35,8 @@ resource "linode_instance" "k8s_node" {
     connection {
       host        = self.ip_address
       agent       = "true"
-      private_key = chomp(file(var.ssh_private_key))
+#      private_key = chomp(file(var.ssh_private_key))
+
       type        = "ssh"
       user        = "core"
       timeout     = "300s"
@@ -56,7 +57,8 @@ resource "linode_instance" "k8s_node" {
     connection {
       host        = self.ip_address
       agent       = "true"
-      private_key = chomp(file(var.ssh_private_key))
+#      private_key = chomp(file(var.ssh_private_key))
+
       type        = "ssh"
       user        = "core"
       timeout     = "300s"
@@ -74,7 +76,8 @@ resource "linode_instance" "k8s_node" {
     connection {
       host        = self.ip_address
       agent       = "true"
-      private_key = chomp(file(var.ssh_private_key))
+#      private_key = chomp(file(var.ssh_private_key))
+
       type        = "ssh"
       user        = "core"
       timeout     = "300s"
